@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <title>AngularJS - Activity 1</title>
+</head>
+<body ng-app ="">
+
+    Register Now? <input type="checkbox" ng-model="myVar" ng-init="myVar-false">
+                    <input type="checkbox" ng-model="myVar2" ng-init="myVar2-false">
+
+    <div ng-if="myVar">
+        <p>Sign In</p>
+        <label>Username</label>
+        <input type="text">
+        <label>Password</label>
+        <input type="text">
+    </div>
+
+    <div ng-if="myVar2">
+        <p>Register</p>
+        <label>Username</label>
+        <input type="text">
+        <label>Password</label>
+        <input type="text">
+    </div>
+
+    <div>
+        <label>Click me to make test readonly: </label>
+        <input type ="checkbox" ng-model="checked">
+
+        <!-- <input type ="text" ng-readonly="checked" value=""/> -->
+             <input type ="text" ng-disabled="checked" value=""/>
+    </div>
+    
+</body>
+</html>
